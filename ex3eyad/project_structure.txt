@@ -1,0 +1,46 @@
+ex3/
+├── include/                  # Header files
+│   ├── Player.hpp            # Base player class definition
+│   ├── Role.hpp              # Base role class definition
+│   ├── Roles/                # Role-specific implementations
+│   │   ├── Governor.hpp
+│   │   ├── Spy.hpp
+│   │   ├── Baron.hpp
+│   │   ├── General.hpp
+│   │   ├── Judge.hpp
+│   │   └── Merchant.hpp
+│   ├── Game.hpp              # Game board/state management
+│   ├── Actions.hpp           # Actions definitions
+│   ├── Exceptions.hpp        # Custom exceptions
+│   └── GUI/                  # GUI components
+│       ├── MainWindow.hpp
+│       ├── PlayerWidget.hpp
+│       └── GameView.hpp
+│
+├── src/                      # Implementation files
+│   ├── Player.cpp
+│   ├── Role.cpp
+│   ├── Roles/
+│   │   ├── Governor.cpp
+│   │   ├── Spy.cpp
+│   │   ├── Baron.cpp
+│   │   ├── General.cpp
+│   │   ├── Judge.cpp
+│   │   └── Merchant.cpp
+│   ├── Game.cpp
+│   ├── Actions.cpp
+│   ├── GUI/
+│   │   ├── MainWindow.cpp
+│   │   ├── PlayerWidget.cpp
+│   │   └── GameView.cpp
+│   └── Main.cpp              # Main entry point
+│
+├── test/                     # Test files
+│   ├── TestMain.cpp          # Main test runner
+│   ├── PlayerTest.cpp        # Tests for Player class
+│   ├── RoleTest.cpp          # Tests for Role classes
+│   ├── GameTest.cpp          # Tests for Game class
+│   └── ActionsTest.cpp       # Tests for various actions
+│
+├── Makefile                  # Build system
+├── readme.md                 # Original requirements
